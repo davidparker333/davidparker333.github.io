@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: #121212;
+    min-width: 1080px;
+    position: relative;
+}
+
+#navBar .navButton {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navBar {
+    background-color: #333333;
+}
+
+a:link {
+    text-decoration: none;
+    color:rgba(255,255,255,.70);
+}
+
+a:visited {
+    text-decoration: none;
+    color:rgba(255,255,255,.70);
+}
+
+a:active {
+    text-decoration: none;
+    color:rgba(255,255,255,.70);
+}
+
+a:hover {
+    text-decoration: underline;
+    color:rgba(255,255,255,.70);
+}
+
+#hello {
+    /*padding: 100px;
+    margin-top: 150px;
+    margin-left: 10px;
+    display: inline-block;*/
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.heading {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 20px;
+    color: rgba(255,255,255,.70);
+}
+
+#headingLine1 {
+    animation: animated-text 2s steps(29,end) 1s 1 normal both;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 260px;}
+  }
+
+#headingLine2 {
+    white-space:nowrap;
+    overflow:hidden;   
+    animation: animated-text-line2 3s steps(55,end) 1s 1 normal both;
+    animation-delay: 4s;
+}
+
+@keyframes animated-text-line2{
+    from{width: 0;}
+    to{width: 550px;}
+  }
+
+#portrait {
+    float: right;
+    height: 758px;
+    width: 405px;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    margin-right: 150px;
+}
+
+#scroll-down {
+    height: 10px;
+    width: 22px;
+    margin: auto;
+    position: absolute;
+    top: 95%;
+    right: 50%;
+}
+
+.subHeading {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255,255,255,.70);
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+
+#about {
+    width: 65%;
+    display: inline-block;
+    position: absolute;
+    top: 900px;
+}
+
+#social {
+    width: 35%;
+    float: right;
+    position: absolute;
+    top: 900px;
+    right: 50px;
+}
+
+p {
+    color: rgba(255,255,255,.70);
+    font-family: 'Open Sans', sans-serif;
+    width: inherit;
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255,255,255,.70);
+    margin: auto;
+    position: relative;
+    padding: 35px;
+}
+
+.links {
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255,255,255,.70);
+    list-style-type: none;
+    display: block;
+    background-color: #333333;
+    text-align: center;
+    line-height: 50px;
+    padding: 10px;
+}
+
+#listContainer {
+    padding: 15px;
+}
+
+#work {
+    position: absolute;
+    top: 1480px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+#dinkelburg {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+}
+
+#contact {
+    position: absolute;
+    top: 2150px;
+    padding: 20px;
+    width: 87%;
+    margin: auto;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255,255,255,.70);
+    margin: auto;
+    position: relative;
+    padding: 5px;
+}
+
+#contactLeft {
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#contactRight {
+    float: right;
+    width: 30%;
+    margin-right: 20%;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#fname {
+    width: 300px;
+}
+
+#lname {
+    width: 300px;
+}
+
+#pnumber {
+    width: 300px;
+}
+
+#email {
+    width: 300px;
+}
+
+#comments {
+    width: 690px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit {
+    width: 690px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    width: 99%;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333333;
+    position: absolute;
+    top: 2800px;
+    display: block;
+    text-align: center;
+}
