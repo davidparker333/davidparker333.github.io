@@ -19,22 +19,24 @@
         <li class="navButton"><a href="#contact">Contact</a></li>
     </nav></ul>
 
-    <div id="hello">
-        <h1 class="heading" id="headingLine1">Hi, I'm David Parker.</h1>
-        <h1 class="heading" id="headingLine2">
-            I'm a full stack developer from Portland, ME.
-        </h1>
+    <div id="landingContainer">
+        <div id="landingContainerCol1">
+            <h1 class="heading" id="headingLine1">Hi, I'm David Parker.</h1>
+            <h1 class="heading" id="headingLine2">I'm a full stack developer from Portland, ME.</h1>
+        </div>
+
+        <div id="landingContainerCol2">
+            <img src="Images/portrait.png">
+        </div>
     </div>
 
-    <div>
-        <img src="Images/portrait.png" id="portrait">
-    </div>
+    <div id="scroll-down-container"><img src="Images/scroll-down.png" id="scroll-down"></div>
 
-    <img src="Images/scroll-down.png" id="scroll-down">
-
-    <div id="about">
-        <h2 class="subHeading">About Me</h2>
-        <p class="paragraph">Nice to meet you! I'm David - a human with lots of interests living in Portland, Maine.
+    <a name="about"></a>
+    <div id="about-links-container">
+        <div id="about-links-containerCol1">
+            <h2 class="subHeading">About Me</h2>
+            <p class="paragraph">Nice to meet you! I'm David - a human with lots of interests living in Portland, Maine.
             Currently, I am attending Coding Temple Bootcamp with a concentration in Python + Data 
             Science. I also have a background in Film, Technology, and Sales.
             <br><br>
@@ -54,12 +56,11 @@
             group of inidividuals has inspired me to finish growing my skills as a developer and join
             their ranks. Look forward to lots of projects to come on this site!
         </p>
-        <a name="about"></a>
-    </div>
+        </div>
 
-    <div id="social">
-        <h2 class="subHeading">Links</h2>
-        <ul id="listContainer">
+        <div id="about-links-containerCol2">
+            <h2 class="subHeading">Links</h2>
+            <ul id="listContainer">
             <li class="links"><a href="https://www.facebook.com/adavidtree/" target="_blank">Facebook</a></li>
             <br>
             <li class="links"><a href="https://twitter.com/adavidtree" target="_blank">Twitter</a></li>
@@ -67,15 +68,17 @@
             <li class="links"><a href="https://www.linkedin.com/in/davidparker333" target="_blank">LinkedIn</a></li>
             <br>
             <li class="links"><a href="https://github.com/davidparker333" target="_blank">GitHub</a></li>
-        </ul>
+            </ul>
+        </div>
     </div>
 
+    <a name="work"></a>
     <div id="work">
         <h2 class="subHeading">Work</h2>
         <img src="Images/dinkelburg.jpg" id="dinkelburg">
-        <a name="work"></a>
     </div>
 
+    <a name="contact"></a>
     <div id="contact">
         <h2 class="subHeading">Contact Me</h2>
         <form id="contactMe">
@@ -95,7 +98,6 @@
             </textarea><br>
             <button type="button" id="submit">Submit</button>
         </form>
-        <a name="contact"></a>
     </div>
 
     <footer>
@@ -105,7 +107,5 @@
     </footer>
 
 </body>
-
-
 
 </html>

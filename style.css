@@ -4,8 +4,6 @@
 
 body {
     background-color: #121212;
-    min-width: 1080px;
-    position: relative;
 }
 
 #navBar .navButton {
@@ -43,14 +41,27 @@ a:hover {
     color:rgba(255,255,255,.70);
 }
 
-#hello {
-    /*padding: 100px;
-    margin-top: 150px;
-    margin-left: 10px;
-    display: inline-block;*/
-    position: absolute;
-    top: 40%;
-    left: 10%;
+#landingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#landingContainerCol1 {
+    display: inline-block;
+    /* border: 2px solid white; */
+    width: 650px;
+    height: 150px;
+}
+
+#landingContainerCol2 {
+    display: inline-block;
+    /* border: 2px solid blue; */
+    width: 400px;
+    height: 758px;
 }
 
 .heading {
@@ -84,46 +95,55 @@ a:hover {
   }
 
 #portrait {
-    float: right;
     height: 758px;
     width: 405px;
-    position: absolute;
-    top: 12%;
-    right: 5%;
-    margin-right: 150px;
 }
 
 #scroll-down {
     height: 10px;
     width: 22px;
-    margin: auto;
-    position: absolute;
-    top: 95%;
-    right: 50%;
+    position: relative;
+    bottom: 50px;
+}
+
+#scroll-down-container {
+    display: flex;
+    justify-content: center;
 }
 
 .subHeading {
     font-family: 'Open Sans', sans-serif;
     color: rgba(255,255,255,.70);
     margin: auto;
-    position: relative;
     text-align: center;
-    padding: 15px;
 }
 
 #about {
     width: 65%;
     display: inline-block;
-    position: absolute;
-    top: 900px;
 }
 
-#social {
-    width: 35%;
-    float: right;
-    position: absolute;
-    top: 900px;
-    right: 50px;
+#about-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#about-links-containerCol1 {
+    display: inline-block;
+    /* border: 2px solid white; */
+    width: 700px;
+    height: 530px;
+}
+
+#about-links-containerCol2 {
+    display: inline-block;
+    /* border: 2px solid blue; */
+    width: 400px;
+    height: 530px;
 }
 
 p {
@@ -136,7 +156,6 @@ p {
     font-family: 'Open Sans', sans-serif;
     color: rgba(255,255,255,.70);
     margin: auto;
-    position: relative;
     padding: 35px;
 }
 
@@ -160,12 +179,8 @@ p {
 }
 
 #work {
-    position: absolute;
-    top: 1480px;
     padding: 20px;
-    width: 90%;
     margin: auto;
-    justify-content: center;
 }
 
 #dinkelburg {
@@ -178,12 +193,9 @@ p {
 }
 
 #contact {
-    position: absolute;
-    top: 2150px;
     padding: 20px;
     width: 87%;
     margin: auto;
-    justify-content: center;
 }
 
 label {
@@ -246,11 +258,9 @@ label {
 
 #footer {
     width: 99%;
-    height: 50px;
+    height: 40px;
     font-family: 'Open Sans', sans-serif;
     background-color: #333333;
-    position: absolute;
-    top: 2800px;
     display: block;
     text-align: center;
 }
