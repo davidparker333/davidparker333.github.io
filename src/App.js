@@ -1,8 +1,10 @@
 import "./styles/App.scss";
-import { Container, Box } from "@mui/material";
+import { Container } from "@mui/material";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import { useState, createContext, useContext, useMemo } from "react";
 import NavBar from "./components/nav/NavBar";
+import Hero from "./components/hero/Hero";
+import Skills from "./components/skills/Skills";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -13,6 +15,8 @@ function App() {
   return (
     <Container className={`app ${theme.palette.mode}`} maxWidth="lg">
       <NavBar handleToggleTheme={colorMode.toggleColorMode} theme={theme} />
+      <Hero />
+      <Skills />
     </Container>
   );
 }
@@ -40,15 +44,12 @@ export default function AppWrapper() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <Box
-          sx={{
-            width: "100vw",
-            height: "100vh",
-            bgcolor: "background.default",
-          }}
+        <div
+          className="wrapper"
+          style={{ "background-color": theme.palette.background.default }}
         >
           <App />
-        </Box>
+        </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
