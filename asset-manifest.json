@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/davidparker333.github.io/static/css/main.a7f68cd2.css",
+    "main.js": "/davidparker333.github.io/static/js/main.8244e6d8.js",
+    "static/js/787.ef521372.chunk.js": "/davidparker333.github.io/static/js/787.ef521372.chunk.js",
+    "static/media/fivestars-logo.png": "/davidparker333.github.io/static/media/fivestars-logo.bc0d7d9ede6ba4044c7c.png",
+    "static/media/memoji_laptop.jpeg": "/davidparker333.github.io/static/media/memoji_laptop.4c441c9a720e191cff8a.jpeg",
+    "static/media/flask-logo.png": "/davidparker333.github.io/static/media/flask-logo.0338dc304363bd3f6a51.png",
+    "static/media/critical-mention-logo.png": "/davidparker333.github.io/static/media/critical-mention-logo.f0f7066d209311daebea.png",
+    "index.html": "/davidparker333.github.io/index.html",
+    "static/media/django.svg": "/davidparker333.github.io/static/media/django.0779fca292c0a723b464bcb7534f802c.svg",
+    "main.a7f68cd2.css.map": "/davidparker333.github.io/static/css/main.a7f68cd2.css.map",
+    "main.8244e6d8.js.map": "/davidparker333.github.io/static/js/main.8244e6d8.js.map",
+    "787.ef521372.chunk.js.map": "/davidparker333.github.io/static/js/787.ef521372.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7f68cd2.css",
+    "static/js/main.8244e6d8.js"
+  ]
+}
