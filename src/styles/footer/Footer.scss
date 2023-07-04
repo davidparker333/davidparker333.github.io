@@ -1,0 +1,14 @@
+@import '../colors';
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  &.dark {
+    .footer {
+      color: $dark-base;
+    }
+  }
+}

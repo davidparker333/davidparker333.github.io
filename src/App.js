@@ -2,9 +2,14 @@ import "./styles/App.scss";
 import { Container } from "@mui/material";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import { useState, createContext, useContext, useMemo } from "react";
+import Reveal from "react-reveal/Reveal";
 import NavBar from "./components/nav/NavBar";
 import Hero from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
+import Experience from "./components/experience/Experience";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -17,6 +22,12 @@ function App() {
       <NavBar handleToggleTheme={colorMode.toggleColorMode} theme={theme} />
       <Hero />
       <Skills />
+      <Reveal bottom>
+        <Experience />
+        <Projects />
+        <Contact />
+      </Reveal>
+      <Footer />
     </Container>
   );
 }
@@ -46,7 +57,7 @@ export default function AppWrapper() {
       <ThemeProvider theme={theme}>
         <div
           className="wrapper"
-          style={{ "background-color": theme.palette.background.default }}
+          style={{ backgroundColor: theme.palette.background.default }}
         >
           <App />
         </div>

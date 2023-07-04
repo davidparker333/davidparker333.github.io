@@ -38,7 +38,7 @@ function NavBar(props) {
           onOpen={handleToggleNav}
         >
           {items.map((i) => (
-            <NavItem name={i} closeNav={handleToggleNav} />
+            <NavItem name={i} closeNav={handleToggleNav} key={i} />
           ))}
         </SwipeableDrawer>
       </div>

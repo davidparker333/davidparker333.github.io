@@ -1,0 +1,27 @@
+@import '../colors';
+
+.socials {
+  margin-top: 30px;
+  font-size: 30px;
+  a {
+    text-decoration: none;
+    color: $light-base;
+  }
+  svg {
+    margin: 0px 20px;
+    border: 1px solid $neutral;
+    padding: 9px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.app {
+  &.dark {
+    .socials {
+      a {
+        color: $dark-base;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 300px;
+  margin-bottom: 400px;
   padding: 0px 50px;
   color: $light-base;
   flex-wrap: wrap;
@@ -16,25 +17,10 @@
     .sub-text {
       font-size: 30px;
     }
-    .socials {
-      margin-top: 30px;
-      font-size: 30px;
-      a {
-        text-decoration: none;
-        color: $light-base;
-      }
-      svg {
-        margin: 0px 20px;
-        border: 1px solid $neutral;
-        padding: 9px 9px;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-    }
   }
   .hero-image {
     img {
-      border: 1px solid $hightlight;
+      border: 1px solid $highlight;
       border-radius: 50%;
     }
   }
@@ -61,6 +47,7 @@
     justify-content: center;
     margin-top: 80px;
     padding: 0px 15px;
+    margin-bottom: 100px;
     .hero-text {
       display: flex;
       justify-content: center;

@@ -1,16 +1,15 @@
 @import '../colors';
+@import '../layout';
+@import '../typography';
 
 .skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 400px;
-  padding-right: 35px;
+  padding: 0px 20px;
+  margin-bottom: 150px;
   .skills-hero-text {
-    display: flex;
-    justify-content: center;
-    font-size: 36px;
-    width: 100%;
+    @extend .hero-text-shared;
   }
   .skills-sub-text {
     display: flex;
@@ -51,6 +50,7 @@
   }
   .skills-text {
     margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 22px;
     .skill-bullet {
       &::before {
@@ -61,6 +61,16 @@
         height: 15px;
         display: inline-block;
         padding-right: 3px;
+      }
+    }
+  }
+  .skill-proficiency {
+    width: 100%;
+    padding: 0px 40px;
+    .proficiency-wrapper {
+      .proficiency-name {
+        margin-top: 5px;
+        margin-bottom: 3px;
       }
     }
   }
@@ -77,6 +87,31 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .skills {
+    padding: 0px 0px;
+    margin-bottom: 100px;
+    .skills-sub-text {
+      text-align: center;
+    }
+    .skills-list {
+      .skill-logo {
+        margin: 5px 5px;
+      }
+    }
+    .skills-text {
+      text-align: center;
+      margin-bottom: 25px;
+      .skill-bullet {
+        padding-bottom: 10px;
+      }
+    }
+    .skill-proficiency {
+      padding: 0px 15px;
     }
   }
 }
