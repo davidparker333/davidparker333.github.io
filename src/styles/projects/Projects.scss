@@ -1,0 +1,49 @@
+@import '../typography';
+@import '../colors';
+@import '../layout';
+
+.projects {
+  margin-bottom: 150px;
+  .projects-hero-text {
+    @extend .hero-text-shared;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    .project {
+      width: 500px;
+      & > div {
+        height: 100px;
+        margin: 10px 0px;
+      }
+    }
+  }
+  .more-projects {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.app {
+  &.dark {
+    .projects {
+      color: $dark-base;
+    }
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .projects {
+    margin-bottom: 100px;
+    .project-list {
+      .project {
+        & > div {
+          height: 110px;
+        }
+      }
+    }
+  }
+}

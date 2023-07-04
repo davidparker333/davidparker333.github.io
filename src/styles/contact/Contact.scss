@@ -1,0 +1,43 @@
+@import '../typography';
+@import '../colors';
+@import '../layout';
+
+.contact {
+  padding: 0px 35px;
+  margin-bottom: 140px;
+  .contact-hero-text {
+    @extend .hero-text-shared;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .contact-sub-text {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .contact-place {
+    .map-icon {
+      margin-right: 3px;
+    }
+  }
+  .socials {
+    margin-top: 20px;
+    svg {
+      margin: 0px 10px;
+    }
+  }
+}
+
+.app {
+  &.dark {
+    .contact {
+      color: $dark-base;
+    }
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .contact {
+    margin-bottom: 100px;
+    padding: 0px 10px;
+  }
+}

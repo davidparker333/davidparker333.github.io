@@ -1,0 +1,37 @@
+@import '../colors';
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  .navDrawer {
+    margin-left: 30px;
+    .drawer {
+      font-size: 24px;
+      cursor: pointer;
+      color: $light-base
+    }
+  }
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    .light-mode-toggle,
+    .dark-mode-toggle {
+      font-size: 16px;
+      color: $neutral;
+    }
+  }
+}
+
+.app {
+  &.dark {
+    .navBar {
+      .navDrawer {
+        .drawer {
+          color: $dark-base;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../colors';
+@import '../layout';
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+  margin-bottom: 400px;
+  padding: 0px 50px;
+  color: $light-base;
+  flex-wrap: wrap;
+  .hero-text {
+    max-width: 690px;
+    .ultra-hero-text {
+      font-size: 70px;
+    }
+    .sub-text {
+      font-size: 30px;
+    }
+  }
+  .hero-image {
+    img {
+      border: 1px solid $highlight;
+      border-radius: 50%;
+    }
+  }
+}
+
+.app {
+  &.dark {
+    .hero {
+      color: $dark-base;
+      .hero-text {
+        .socials {
+          a {
+            color: $dark-base;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0px 15px;
+    margin-bottom: 100px;
+    .hero-text {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      .ultra-hero-text {
+        font-size: 32px;
+        margin-bottom: 25px;
+      }
+      .sub-text {
+        font-size: 20px;
+      }
+    }
+  }
+}

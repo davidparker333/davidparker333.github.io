@@ -1,0 +1,8 @@
+.navItem {
+  font-size: 45px;
+  margin: 30px 60px;
+  cursor: pointer;
+  &:first-of-type {
+    margin-top: 60px;
+  }
+}
