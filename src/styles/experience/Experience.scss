@@ -21,6 +21,8 @@
         border-bottom: 1px solid $highlight;
         .experience-logo {
           img {
+            background-color: $dark-base;
+            padding: 5px;
             height: 100px;
             width: 100px;
             border-radius: 50%;

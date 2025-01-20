@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@mui/material";
 import "../../styles/experience/Experience.scss";
 import CMLogo from "../../assets/critical-mention-logo.png";
-import FSLogo from "../../assets/fivestars-logo.png";
+import OnclusiveLogo from "../../assets/onclusive-logo.png";
 
 function CardHeader(experienceObj) {
   return (
@@ -32,13 +32,22 @@ function ExperienceCard(experienceObj) {
 function Experience() {
   const experience = [
     {
+      company: "Onclusive",
+      logo: OnclusiveLogo,
+      title: "Staff Engineer",
+      date: "2023 - Present",
+      desc:
+        "Architected, led, and contributed to critical company-transforming projects. " +
+        "Overhauled and combined several large SaaS products into a single unified platform.",
+    },
+    {
       company: "Critical Mention",
       logo: CMLogo,
       title: "Team Lead",
-      date: "2022 - Present",
+      date: "2022 - 2023",
       desc:
         "Led a team of engineers, and took the helm during several large product transformation projects. " +
-        "Provided technical leadership, designed systems, mentored team members, and managed project timelines",
+        "Provided technical leadership, designed systems, mentored team members, and managed project timelines.",
     },
     {
       company: "Critical Mention",
@@ -47,16 +56,7 @@ function Experience() {
       title: "Full Stack Developer",
       desc:
         "Developed for and maintained an existing web app across a diverse range of technologies. " +
-        "Built several large new features and continuously migrated the project from an outdated JS framework to Vue.js",
-    },
-    {
-      company: "Fivestars",
-      logo: FSLogo,
-      date: "2019 - 2021",
-      title: "Team Lead",
-      desc:
-        "Led a team of salespeople across the Northeast. Drove individual and team performance in a brand new market. " +
-        "Helped introduce new technologies, facilitate user feedback, and grow the footprint",
+        "Built several large new features and continuously migrated the project from an outdated JS framework to Vue.js.",
     },
   ];
 
